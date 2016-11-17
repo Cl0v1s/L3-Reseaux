@@ -1,0 +1,122 @@
+body
+{
+  background-color: #272822;
+  color: #E9E9E2;
+  font-family: 'Open', sans-serif;
+  font-weight:normal;
+}
+
+header, footer
+{
+  color: #91C710;
+  font-size: 25px;
+}
+
+header
+{
+  background-color: #49483E;
+  padding: 5px;
+  overflow: hidden;
+  transition: all 2s ease;
+  border-radius: 5px;
+}
+
+header nav
+{
+  padding: 5px;
+  background-color: #272822;
+  border-radius: 5px;
+}
+
+nav a
+{
+  font-size: 16px;
+  color: #5CC1D3;
+
+  text-decoration: none;
+  transition: all 1s ease;
+}
+
+nav a:hover 
+{
+  color: #89EDFF;
+}
+
+nav a:visited
+{
+  color: #2D7986;
+}
+
+h1,h2,h3
+{
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+}
+
+h1
+{
+  color: #c6275c;
+}
+
+h2
+{
+  color: #6c71c4;
+}
+
+h3
+{
+  color: #268bd2;
+}
+
+.waldo:hover
+{
+  color: #DED469;
+}
+
+iframe
+{
+  width: 100%;
+  height: 200px;
+  border:none;
+  border-radius: 5px;
+}
+
+.img
+{
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-size:0;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.img:before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: inherit;
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
+}
+
+.img:after
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: inherit;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 5px 5px 5px black;
+}
